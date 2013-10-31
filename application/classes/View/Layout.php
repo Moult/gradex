@@ -6,7 +6,7 @@ defined('SYSPATH') OR die('No direct script access.');
  */
 class View_Layout
 {
-    public $page_title = 'vtemplate';
+    public $page_title = 'University of Sydney Architecture Graduation Exhibition';
     public $meta_description = 'Your default page description';
     public $meta_keywords = 'seo, keywords, go, here';
 
