@@ -1,6 +1,11 @@
-<link href="http://fonts.googleapis.com/css?family=Lato:100,700,900" rel="stylesheet" type="text/css">
+<body class="splash">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+<div class="container">
 <header>
-    <h2><a href="#"><img src="{{baseurl}}images/icons/catalogue.png" width="16" height="16" alt="Catalogue icon"> catalogue index.</a></h2>
+    <h2><a href="#"><img src="{{baseurl}}images/icons/catalogue.png" width="16"
+            height="16" alt="Catalogue icon">University of Sydney Architecture catalogue</a></h2>
 </header>
 <section id="blurb">
 </section>
@@ -13,14 +18,14 @@
         Select a year
     </p>
     <ol>
-        <li><a href="#"><img src="{{baseurl}}images/logos/analogue.png" alt="Analogue Logo">2011<span>aMaze</span></a></li>
-        <li><a href="#"><img src="{{baseurl}}images/logos/analogue.png" alt="Analogue Logo">2012<span>Transform</span></a></li>
-        <li><a href="#"><img src="{{baseurl}}images/logos/analogue.png" alt="Analogue Logo">2013<span>Analogue</span><span>Coming soon</span></a></li>
+        <li><a href="#"><img src="{{baseurl}}images/logos/amaze.png" alt="aMaze Logo"><br>2011<span>aMaze</span></a></li>
+        <li><a href="#"><img src="{{baseurl}}images/logos/transform.png" alt="Transform Logo"><br>2012<span>Transform</span></a></li>
+        <li><a href="#" id="viewDetails"><img src="{{baseurl}}images/logos/analogue.png" alt="Analogue Logo"><br>2013<span>Analogue</span><span>Coming Dec 05</span></a><a href="#analogue" class="scroll" id="scrollToDetails"></a></li>
     </ol>
 </section>
 <section id="details">
     <article>
-        <h2>Analogue</h2>
+        <h2><a id="analogue">Analogue</a></h2>
         <p>
         The Faculty of Architecture, Design and Planning is proud to present:<br>
         ANALOGUE, the 2013 architecture graduation exhibition.
@@ -32,12 +37,12 @@
             <li>
                 <span class="where">Where</span>
                 148 City Road, Darlington, the "Wilkinson" Building<br>
-                Note to self: insert map
+                <img src="{{baseurl}}images/map.png" alt="Map of Wilkinson Building Architecture Faculty" width="300" height="200">
             </li>
             <li>
                 <span class="when">When</span>
-                1st December - Opening Night<br>
-                2nd December - Something
+                5th December 6PM - Opening Night<br>
+                3rd-9th December - Open for Public
             </li>
             <li>
                 <span class="why">Why</span>
@@ -64,3 +69,4 @@
         <li><a href="#">Check us out on Facebook</a></li>
     </ul>
 </footer>
+</div>

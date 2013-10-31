@@ -1,20 +1,46 @@
 /**
  * Site specific CSS
  */
+
+.mCSB_container
+    margin-right 0px !important
+
+html
+    height 100%
+
+body.splash
+    background-image url('../images/showcase1.jpg')
+    background-size 100% auto
+
 body
+    height 100%
+    font-size 13px
     background-image url('../images/noisy_net.png')
-    font-size 15px
+    /*background-image url('../images/light_noise_diagonal.png')*/
+    /*webkit-background-size cover*/
+    /*moz-background-size cover*/
+    /*o-background-size cover*/
+    /*background-size cover*/
+    /*overflow-y scroll*/
+    overflow auto
 a
     -o-transition 0.5s
     -ms-transition 0.5s
     -moz-transition 0.5s
     -webkit-transition 0.5s
     transition 0.5s
+p.readmore
+    display none
+header:hover
+    opacity 1
 header
+    opacity 0.7
+    transition opacity 0.5s ease-in
+    top 0px
     z-index 1000
     border-top 5px solid #12171b
     background-image url('../images/light_noise_diagonal.png')
-    overflow hidden
+    overflow visible
     -webkit-box-shadow:  0px 15px 30px 0px rgba(0, 0, 0, 0.5);
     box-shadow:  0px 15px 30px 0px rgba(0, 0, 0, 0.5);
     position fixed
@@ -29,17 +55,91 @@ header
         background-position top right
         display inline-block
         font-weight 900
-        font-size 0.8em
+        font-size 0.85em
+        position relative
+        ul
+            border-left 5px solid #12171b
+            position fixed
+            display none
+            z-index 3000
+            top 35px
+            background-image url('../images/light_noise_diagonal.png')
+            padding-left 1em
+            padding-right 1em
+            list-style-type none
         a
             color #595f6a
             text-shadow 0px 1px 0px rgba(255, 255, 255, 0.5)
-            font-family 'Lato', sans-serif
+            font-family 'Arial', sans-serif
             text-decoration none
         a:hover
             color #121212
         img
             vertical-align middle
             margin-right 0.5em
+section#project
+    margin-bottom 50px
+    p:first-of-type
+        padding-bottom 1em
+        border-bottom 1px dashed rgba(255, 255, 255, 0.15)
+    img:first-of-type
+        max-width 100%
+        height auto
+        max-height 100%
+        margin 0px
+    img
+        display block
+        margin-left 3em
+        margin-bottom 2em
+        max-width 40em
+        height auto
+        max-height 100%
+    h1
+        color #fff
+        font-family 'Arial', sans-serif
+        font-weight 900
+        font-size 3.8em
+        letter-spacing -0.07em
+        margin-top 0.8em
+        margin-left 0.8em
+    h2
+        margin-left 2.3em
+        font-size 1.2em
+        margin-top 0px
+        padding-top 0px
+        color #8891A2
+        width 33em
+        img
+            display inline-block
+            transition opacity 0.2s ease-in
+            opacity 0.5
+        img:hover
+            opacity 1
+        span
+            float right
+    p
+        margin-left 3em
+        width 40em
+        margin-right 3em
+        color #8891A2
+        a
+            text-decoration none
+            font-size 1em
+            background-color rgba(255, 255, 255, 0.1)
+            padding 0.8em
+            padding-top 0.5em
+            padding-bottom 0.5em
+            margin 1em
+            margin-left 0px
+            display inline-block
+            -webkit-border-radius 15px
+            border-radius 15px
+            color #aaa
+            opacity 0.5
+            transition opacity 0.5s ease-in
+        a:hover
+            color #fff
+            opacity 1
 section#blurb
     background-image url('../images/light_noise_diagonal.png')
     z-index 100
@@ -47,26 +147,90 @@ section#blurb
     top 40px
     width 100%
     position fixed
+section#browse
+    margin-bottom 30px
+    overflow hidden
+    ul
+        width 100%
+        padding 0px
+        margin 0px
+        li
+            cursor pointer
+            color #8891A2
+            position relative
+            width 20%
+            min-height 300px
+            list-style-type none
+            box-shadow 5px
+            float left
+            background-image url('http://placehold.it/300x300')
+            background-image url('http://placekitten.com/300/300')
+            background-repeat no-repeat
+            background-position top center
+            padding-bottom 20px
+            opacity 0.5
+            transition opacity 0.2s ease-in, transform 0.15s ease-in
+            -webkit-transition opacity 0.2s ease-in, -webkit-transform 0.15s ease-in
+            span
+                display inline-block
+                margin-top 320px
+                margin-left 20px
+        li:hover
+            transform scale(0.95,0.95)
+            -webkit-transform scale(0.95,0.95)
+            opacity 1
+section#brief
+    color #8891A2
+    margin-left 3em
+    h2
+        display inline-block
+        width 10em
+        margin-bottom 0em
+        color #fff
+    p:first-of-type
+        padding-bottom 1em
+        border-bottom 1px dashed rgba(255, 255, 255, 0.15)
+    p
+        width 40em
+        a
+            text-decoration none
+            font-size 1em
+            background-color rgba(255, 255, 255, 0.1)
+            padding 0.8em
+            padding-top 0.5em
+            padding-bottom 0.5em
+            margin 1em
+            margin-left 0px
+            display inline-block
+            -webkit-border-radius 15px
+            border-radius 15px
+            color #aaa
+            opacity 0.5
+            transition opacity 0.5s ease-in
+        a:hover
+            color #fff
+            opacity 1
+section#main.flinders-st-project
+    background-image url('../images/flinders-st-station-melbourne.jpg')
+    height 360px
 section#main
+    /*background-size 100% auto*/
+    height 100%
+    min-height 100%
     margin 0px
     overflow hidden
     padding-top 40px
-    background-image url('../images/showcase1.jpg')
     z-index 100
-    webkit-background-size cover
-    moz-background-size cover
-    o-background-size cover
-    background-size cover
     h1
         color #fff
-        font-family 'Lato', sans-serif
+        font-family 'Arial', sans-serif
         font-weight 900
         font-size 3.8em
         letter-spacing -0.07em
         margin-top 0.8em
         margin-left 0.8em
     p
-        font-family 'Lato', sans-serif
+        font-family 'Arial', sans-serif
         font-weight 700
         font-size 1.52em
         color #121212
@@ -93,7 +257,10 @@ section#main
             a:hover
                 color #555
 section#details
+    background-image url('../images/noisy_net.png')
+    display none
     overflow hidden
+    padding-bottom 80px
     article:nth-child(even)
         text-align right
         h3
@@ -102,7 +269,7 @@ section#details
         ul
             margin-right 3.04em
     article
-        color #595f6a
+        color #8891A2
         float left
         width 50%
         a
@@ -111,8 +278,7 @@ section#details
         a:hover
             color #eee
         h2
-            font-family 'Lato', sans-serif
-            font-weight 100
+            font-family 'Arial', sans-serif
             text-shadow 0px -1px 0px rgba(0, 0, 0, 0.5)
             text-transform uppercase
             background-image url('../images/logos/analogue.png')
@@ -120,15 +286,15 @@ section#details
             line-height 128px
             background-repeat no-repeat
             padding-left 128px
-            font-size 3em
+            font-size 2em
             margin-left 1.013em
             margin-top 1.013em
         h3
             text-shadow 0px -1px 0px rgba(0, 0, 0, 0.5)
             margin-top 1.013em
-            font-size 3em
+            font-size 2em
             margin-left 1.013em
-            font-family 'Lato', sans-serif
+            font-family 'Arial', sans-serif
             font-weight 100
             line-height 128px
             text-transform uppercase
@@ -155,6 +321,9 @@ section#details
                 span.why
                     background-image url('../images/icons/question_mark.png')
 footer
+    position fixed
+    bottom 0px
+    width 100%
     background-color #121212
     text-align center
     ul
@@ -164,10 +333,10 @@ footer
             display inline-block
             margin-right 20px
             margin-left 20px
-            line-height 50px
+            line-height 30px
             a
                 color #595f6a
                 text-decoration none
-                font-size 0.7em
+                font-size 0.8em
             a:hover
                 color #aaa
