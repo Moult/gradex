@@ -8,20 +8,10 @@
 html
     height 100%
 
-body.splash
-    background-image url('../images/showcase1.jpg')
-    background-size 100% auto
-
 body
     height 100%
     font-size 13px
     background-image url('../images/noisy_net.png')
-    /*background-image url('../images/light_noise_diagonal.png')*/
-    /*webkit-background-size cover*/
-    /*moz-background-size cover*/
-    /*o-background-size cover*/
-    /*background-size cover*/
-    /*overflow-y scroll*/
     overflow auto
 a
     -o-transition 0.5s
@@ -31,11 +21,7 @@ a
     transition 0.5s
 p.readmore
     display none
-header:hover
-    opacity 1
 header
-    opacity 0.7
-    transition opacity 0.5s ease-in
     top 0px
     z-index 1000
     border-top 5px solid #12171b
@@ -43,7 +29,6 @@ header
     overflow visible
     -webkit-box-shadow:  0px 15px 30px 0px rgba(0, 0, 0, 0.5);
     box-shadow:  0px 15px 30px 0px rgba(0, 0, 0, 0.5);
-    position fixed
     width 100%
     h2
         margin 0px
@@ -70,7 +55,7 @@ header
         a
             color #595f6a
             text-shadow 0px 1px 0px rgba(255, 255, 255, 0.5)
-            font-family 'Arial', sans-serif
+            font-family 'Roboto', sans-serif
             text-decoration none
         a:hover
             color #121212
@@ -87,28 +72,31 @@ section#project
         height auto
         max-height 100%
         margin 0px
-    img
+    img.supplementary
         display block
         margin-left 3em
         margin-bottom 2em
-        max-width 40em
+        width 40em
         height auto
-        max-height 100%
     h1
         color #fff
-        font-family 'Arial', sans-serif
-        font-weight 900
-        font-size 3.8em
-        letter-spacing -0.07em
         margin-top 0.8em
-        margin-left 0.8em
+        margin-left 1em
+        font-size 3em
+        font-family 'Roboto', sans-serif
+        font-weight 300
     h2
-        margin-left 2.3em
-        font-size 1.2em
+        margin-left 2em
         margin-top 0px
         padding-top 0px
         color #8891A2
         width 33em
+        font-family 'Roboto', sans-serif
+        font-weight 300
+        display inline-block
+        width 26em
+        margin-bottom 0em
+        color #fff
         img
             display inline-block
             transition opacity 0.2s ease-in
@@ -168,7 +156,6 @@ section#browse
             background-repeat no-repeat
             background-position top center
             padding-bottom 20px
-            opacity 0.5
             transition opacity 0.2s ease-in, transform 0.15s ease-in
             -webkit-transition opacity 0.2s ease-in, -webkit-transform 0.15s ease-in
             span
@@ -181,8 +168,19 @@ section#browse
             opacity 1
 section#brief
     color #8891A2
+    color #A7B2C7
     margin-left 3em
+    h1
+        display block
+        width 10em
+        margin-bottom 0em
+        color #fff
+        font-size 3em
+        font-family 'Roboto', sans-serif
+        font-weight 300
     h2
+        font-family 'Roboto', sans-serif
+        font-weight 300
         display inline-block
         width 10em
         margin-bottom 0em
@@ -204,7 +202,7 @@ section#brief
             display inline-block
             -webkit-border-radius 15px
             border-radius 15px
-            color #aaa
+            color #eee
             opacity 0.5
             transition opacity 0.5s ease-in
         a:hover
@@ -214,23 +212,29 @@ section#main.flinders-st-project
     background-image url('../images/flinders-st-station-melbourne.jpg')
     height 360px
 section#main
-    /*background-size 100% auto*/
+    text-align center
     height 100%
     min-height 100%
     margin 0px
     overflow hidden
     padding-top 40px
     z-index 100
-    h1
+    h1,h2
         color #fff
-        font-family 'Arial', sans-serif
+        font-family 'Roboto', sans-serif
         font-weight 900
+        font-weight 300
         font-size 3.8em
-        letter-spacing -0.07em
         margin-top 0.8em
+        margin-bottom 1.4em
         margin-left 0.8em
+    h2
+        font-size 3em
+        margin-bottom 0em
+    h1
+        margin-top 0em
     p
-        font-family 'Arial', sans-serif
+        font-family 'Roboto', sans-serif
         font-weight 700
         font-size 1.52em
         color #121212
@@ -241,27 +245,65 @@ section#main
         list-style-type none
         li
             vertical-align top
-            width 200px
+            width 300px
             display inline-block
             a
                 text-shadow 0px 1px 0px rgba(255, 255, 255, 0.2)
                 text-decoration none
-                color #121212
-                font-size 3em
-                font-family 'Arial', sans-serif
+                color #bbb
+                font-size 1em
+                font-family 'Roboto', sans-serif
                 span
                     display block
-                    font-size 0.3em
                 span:first-child
                     font-weight bold
             a:hover
-                color #555
+                color #fff
+section#submit
+    background-image url('../images/light_noise_diagonal.png')
+    padding 2em
+    overflow hidden
+    p
+        clear both
+    label
+        width 9em
+        display inline-block
+        float left
+        clear left
+        line-height 2em
+    input,select,textarea
+        background-color #fff
+        border 0px
+        -webkit-border-radius 15px
+        border-radius 15px
+        padding 0.5em
+        margin-bottom 1em
+        float left
+    textarea
+        width 30em
+        height 10em
+    span
+        line-height 2em
+        color #444
+        font-style italic
+        margin-left 3em
+        float left
+    input[type="submit"]
+        clear both
+        background-color #888
+        color #fff
 section#details
-    background-image url('../images/noisy_net.png')
+    background-image url('../images/light_noise_diagonal.png')
     display none
     overflow hidden
     padding-bottom 80px
-    article:nth-child(even)
+    margin-top 3em
+    text-align center
+    .arrow
+        position absolute
+        margin-top -28px
+        margin-left 300px
+    article:nth-child(odd)
         text-align right
         h3
             text-align right
@@ -269,33 +311,54 @@ section#details
         ul
             margin-right 3.04em
     article
-        color #8891A2
+        text-align left
+        padding-top 3em
+        /*color #8891A2*/
+        color #333
         float left
         width 50%
-        a
-            color #aaa
+        a.button
             text-decoration none
-        a:hover
-            color #eee
+            font-size 1em
+            background-color rgba(0, 0, 0, 0.2)
+            padding 0.8em
+            padding-top 0.5em
+            padding-bottom 0.5em
+            margin 1em
+            margin-left 0px
+            display inline-block
+            -webkit-border-radius 15px
+            border-radius 15px
+            color #333
+            opacity 0.5
+            transition opacity 0.5s ease-in
+        a.button:hover
+            color #111
+            opacity 1
         h2
-            font-family 'Arial', sans-serif
+            font-family 'Roboto', sans-serif
             text-shadow 0px -1px 0px rgba(0, 0, 0, 0.5)
             text-transform uppercase
-            background-image url('../images/logos/analogue.png')
+            background-image url('../images/logos/analogue_small.png')
             background-position center left
             line-height 128px
             background-repeat no-repeat
             padding-left 128px
             font-size 2em
-            margin-left 1.013em
+            margin-left 1.513em
             margin-top 1.013em
+            font-weight 100
+            a
+                color #eee
         h3
+            color #eee
             text-shadow 0px -1px 0px rgba(0, 0, 0, 0.5)
+            font-weight 100
             margin-top 1.013em
             font-size 2em
             margin-left 1.013em
-            font-family 'Arial', sans-serif
-            font-weight 100
+            padding-right 1.013em
+            font-family 'Roboto', sans-serif
             line-height 128px
             text-transform uppercase
         p
@@ -306,6 +369,7 @@ section#details
             margin-left 3.04em
             li
                 padding-left 100px
+                padding-right 1.013em
                 line-height 2em
                 span
                     font-weight bold

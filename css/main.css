@@ -9,23 +9,21 @@ textarea{resize:vertical}
 .chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
 .mCSB_container{margin-right:0 !important}
 html{height:100%}
-body.splash{background-image:url("../images/showcase1.jpg");background-size:100% auto}
 body{height:100%;font-size:13px;background-image:url("../images/noisy_net.png");overflow:auto}
 a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s}
 p.readmore{display:none}
-header:hover{opacity:1}
-header{opacity:.7;transition:opacity .5s ease-in;top:0;z-index:1000;border-top:5px solid #12171b;background-image:url("../images/light_noise_diagonal.png");overflow:visible;-webkit-box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);position:fixed;width:100%;}
+header{top:0;z-index:1000;border-top:5px solid #12171b;background-image:url("../images/light_noise_diagonal.png");overflow:visible;-webkit-box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);width:100%;}
 header h2{margin:0;margin-left:15px;padding-right:17px;line-height:35px;background-image:url("../images/divider.png");background-repeat:repeat-y;background-position:top right;display:inline-block;font-weight:900;font-size:.85em;position:relative;}
 header h2 ul{border-left:5px solid #12171b;position:fixed;display:none;z-index:3000;top:35px;background-image:url("../images/light_noise_diagonal.png");padding-left:1em;padding-right:1em;list-style-type:none}
-header h2 a{color:#595f6a;text-shadow:0 1px 0 rgba(255,255,255,0.5);font-family:'Arial',sans-serif;text-decoration:none}
+header h2 a{color:#595f6a;text-shadow:0 1px 0 rgba(255,255,255,0.5);font-family:'Roboto',sans-serif;text-decoration:none}
 header h2 a:hover{color:#121212}
 header h2 img{vertical-align:middle;margin-right:.5em}
 section#project{margin-bottom:50px;}
 section#project p:first-of-type{padding-bottom:1em;border-bottom:1px dashed rgba(255,255,255,0.15)}
 section#project img:first-of-type{max-width:100%;height:auto;max-height:100%;margin:0}
-section#project img{display:block;margin-left:3em;margin-bottom:2em;max-width:40em;height:auto;max-height:100%}
-section#project h1{color:#fff;font-family:'Arial',sans-serif;font-weight:900;font-size:3.8em;letter-spacing:-.07em;margin-top:.8em;margin-left:.8em}
-section#project h2{margin-left:2.3em;font-size:1.2em;margin-top:0;padding-top:0;color:#8891a2;width:33em;}
+section#project img.supplementary{display:block;margin-left:3em;margin-bottom:2em;width:40em;height:auto}
+section#project h1{color:#fff;margin-top:.8em;margin-left:1em;font-size:3em;font-family:'Roboto',sans-serif;font-weight:300}
+section#project h2{margin-left:2em;margin-top:0;padding-top:0;color:#8891a2;width:33em;font-family:'Roboto',sans-serif;font-weight:300;display:inline-block;width:26em;margin-bottom:0;color:#fff;}
 section#project h2 img{display:inline-block;transition:opacity .2s ease-in;opacity:.5}
 section#project h2 img:hover{opacity:1}
 section#project h2 span{float:right}
@@ -35,37 +33,49 @@ section#project p a:hover{color:#fff;opacity:1}
 section#blurb{background-image:url("../images/light_noise_diagonal.png");z-index:100;min-height:5px;top:40px;width:100%;position:fixed}
 section#browse{margin-bottom:30px;overflow:hidden;}
 section#browse ul{width:100%;padding:0;margin:0;}
-section#browse ul li{cursor:pointer;color:#8891a2;position:relative;width:20%;min-height:300px;list-style-type:none;box-shadow:5px;float:left;background-image:url("http://placehold.it/300x300");background-image:url("http://placekitten.com/300/300");background-repeat:no-repeat;background-position:top center;padding-bottom:20px;opacity:.5;transition:opacity .2s ease-in,transform .15s ease-in;-webkit-transition:opacity .2s ease-in,-webkit-transform .15s ease-in;}
+section#browse ul li{cursor:pointer;color:#8891a2;position:relative;width:20%;min-height:300px;list-style-type:none;box-shadow:5px;float:left;background-image:url("http://placehold.it/300x300");background-image:url("http://placekitten.com/300/300");background-repeat:no-repeat;background-position:top center;padding-bottom:20px;transition:opacity .2s ease-in,transform .15s ease-in;-webkit-transition:opacity .2s ease-in,-webkit-transform .15s ease-in;}
 section#browse ul li span{display:inline-block;margin-top:320px;margin-left:20px}
 section#browse ul li:hover{transform:scale(.95,.95);-webkit-transform:scale(.95,.95);opacity:1}
-section#brief{color:#8891a2;margin-left:3em;}
-section#brief h2{display:inline-block;width:10em;margin-bottom:0;color:#fff}
+section#brief{color:#8891a2;color:#a7b2c7;margin-left:3em;}
+section#brief h1{display:block;width:10em;margin-bottom:0;color:#fff;font-size:3em;font-family:'Roboto',sans-serif;font-weight:300}
+section#brief h2{font-family:'Roboto',sans-serif;font-weight:300;display:inline-block;width:10em;margin-bottom:0;color:#fff}
 section#brief p:first-of-type{padding-bottom:1em;border-bottom:1px dashed rgba(255,255,255,0.15)}
 section#brief p{width:40em;}
-section#brief p a{text-decoration:none;font-size:1em;background-color:rgba(255,255,255,0.1);padding:.8em;padding-top:.5em;padding-bottom:.5em;margin:1em;margin-left:0;display:inline-block;-webkit-border-radius:15px;border-radius:15px;color:#aaa;opacity:.5;transition:opacity .5s ease-in}
+section#brief p a{text-decoration:none;font-size:1em;background-color:rgba(255,255,255,0.1);padding:.8em;padding-top:.5em;padding-bottom:.5em;margin:1em;margin-left:0;display:inline-block;-webkit-border-radius:15px;border-radius:15px;color:#eee;opacity:.5;transition:opacity .5s ease-in}
 section#brief p a:hover{color:#fff;opacity:1}
 section#main.flinders-st-project{background-image:url("../images/flinders-st-station-melbourne.jpg");height:360px}
-section#main{height:100%;min-height:100%;margin:0;overflow:hidden;padding-top:40px;z-index:100;}
-section#main h1{color:#fff;font-family:'Arial',sans-serif;font-weight:900;font-size:3.8em;letter-spacing:-.07em;margin-top:.8em;margin-left:.8em}
-section#main p{font-family:'Arial',sans-serif;font-weight:700;font-size:1.52em;color:#121212;text-shadow:0 1px 0 rgba(255,255,255,0.2);margin-left:2em;text-transform:lowercase}
+section#main{text-align:center;height:100%;min-height:100%;margin:0;overflow:hidden;padding-top:40px;z-index:100;}
+section#main h1,section#main h2{color:#fff;font-family:'Roboto',sans-serif;font-weight:900;font-weight:300;font-size:3.8em;margin-top:.8em;margin-bottom:1.4em;margin-left:.8em}
+section#main h2{font-size:3em;margin-bottom:0}
+section#main h1{margin-top:0}
+section#main p{font-family:'Roboto',sans-serif;font-weight:700;font-size:1.52em;color:#121212;text-shadow:0 1px 0 rgba(255,255,255,0.2);margin-left:2em;text-transform:lowercase}
 section#main ol{list-style-type:none;}
-section#main ol li{vertical-align:top;width:200px;display:inline-block;}
-section#main ol li a{text-shadow:0 1px 0 rgba(255,255,255,0.2);text-decoration:none;color:#121212;font-size:3em;font-family:'Arial',sans-serif;}
-section#main ol li a span{display:block;font-size:.3em}
+section#main ol li{vertical-align:top;width:300px;display:inline-block;}
+section#main ol li a{text-shadow:0 1px 0 rgba(255,255,255,0.2);text-decoration:none;color:#bbb;font-size:1em;font-family:'Roboto',sans-serif;}
+section#main ol li a span{display:block}
 section#main ol li a span:first-child{font-weight:bold}
-section#main ol li a:hover{color:#555}
-section#details{background-image:url("../images/noisy_net.png");display:none;overflow:hidden;padding-bottom:80px;}
-section#details article:nth-child(even){text-align:right;}
-section#details article:nth-child(even) h3{text-align:right;margin-right:1.013em}
-section#details article:nth-child(even) ul{margin-right:3.04em}
-section#details article{color:#8891a2;float:left;width:50%;}
-section#details article a{color:#aaa;text-decoration:none}
-section#details article a:hover{color:#eee}
-section#details article h2{font-family:'Arial',sans-serif;text-shadow:0 -1px 0 rgba(0,0,0,0.5);text-transform:uppercase;background-image:url("../images/logos/analogue.png");background-position:center left;line-height:128px;background-repeat:no-repeat;padding-left:128px;font-size:2em;margin-left:1.013em;margin-top:1.013em}
-section#details article h3{text-shadow:0 -1px 0 rgba(0,0,0,0.5);margin-top:1.013em;font-size:2em;margin-left:1.013em;font-family:'Arial',sans-serif;font-weight:100;line-height:128px;text-transform:uppercase}
+section#main ol li a:hover{color:#fff}
+section#submit{background-image:url("../images/light_noise_diagonal.png");padding:2em;overflow:hidden;}
+section#submit p{clear:both}
+section#submit label{width:9em;display:inline-block;float:left;clear:left;line-height:2em}
+section#submit input,section#submit select,section#submit textarea{background-color:#fff;border:0;-webkit-border-radius:15px;border-radius:15px;padding:.5em;margin-bottom:1em;float:left}
+section#submit textarea{width:30em;height:10em}
+section#submit span{line-height:2em;color:#444;font-style:italic;margin-left:3em;float:left}
+section#submit input[type="submit"]{clear:both;background-color:#888;color:#fff}
+section#details{background-image:url("../images/light_noise_diagonal.png");display:none;overflow:hidden;padding-bottom:80px;margin-top:3em;text-align:center;}
+section#details .arrow{position:absolute;margin-top:-28px;margin-left:300px}
+section#details article:nth-child(odd){text-align:right;}
+section#details article:nth-child(odd) h3{text-align:right;margin-right:1.013em}
+section#details article:nth-child(odd) ul{margin-right:3.04em}
+section#details article{text-align:left;padding-top:3em;color:#333;float:left;width:50%;}
+section#details article a.button{text-decoration:none;font-size:1em;background-color:rgba(0,0,0,0.2);padding:.8em;padding-top:.5em;padding-bottom:.5em;margin:1em;margin-left:0;display:inline-block;-webkit-border-radius:15px;border-radius:15px;color:#333;opacity:.5;transition:opacity .5s ease-in}
+section#details article a.button:hover{color:#111;opacity:1}
+section#details article h2{font-family:'Roboto',sans-serif;text-shadow:0 -1px 0 rgba(0,0,0,0.5);text-transform:uppercase;background-image:url("../images/logos/analogue_small.png");background-position:center left;line-height:128px;background-repeat:no-repeat;padding-left:128px;font-size:2em;margin-left:1.513em;margin-top:1.013em;font-weight:100;}
+section#details article h2 a{color:#eee}
+section#details article h3{color:#eee;text-shadow:0 -1px 0 rgba(0,0,0,0.5);font-weight:100;margin-top:1.013em;font-size:2em;margin-left:1.013em;padding-right:1.013em;font-family:'Roboto',sans-serif;line-height:128px;text-transform:uppercase}
 section#details article p{margin-left:3.04em}
 section#details article ul{padding:0;list-style-type:none;margin-left:3.04em;}
-section#details article ul li{padding-left:100px;line-height:2em;}
+section#details article ul li{padding-left:100px;padding-right:1.013em;line-height:2em;}
 section#details article ul li span{font-weight:bold;position:absolute;margin-left:-100px;padding-left:25px;background-repeat:no-repeat;background-position:center left}
 section#details article ul li span.where{background-image:url("../images/icons/location.png")}
 section#details article ul li span.when{background-image:url("../images/icons/calendar.png")}
