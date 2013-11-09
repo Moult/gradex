@@ -1,6 +1,6 @@
-# gradex
+# usydarchexhibition
 
-Graduation exhibition catalogue website frontend.
+Website for the University of Sydney Architecture Exhibition
 
 # Installation
 
