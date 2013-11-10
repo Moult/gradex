@@ -14,60 +14,72 @@
         Use the form below to submit your student work to the catalogue. If you
         have any questions, please send them to <a href="mailto:dmou8237@uni.sydney.edu.au">dmou8237@uni.sydney.edu.au</a>
     </p>
-    <form action="" method="post">
+    {{#has_errors}}
+    <div class="error">
+        <p>
+            Uh oh! There are a few things you need to fix before we can accept
+            your submission:
+        </p>
+        <ul>
+        {{#errors}}
+            <li>{{error}}</li>
+        {{/errors}}
+        </ul>
+    </div>
+    {{/has_errors}}
+    <form action="" method="post" enctype="multipart/form-data">
         <label for="name">Project title</label>
-        <input type="text">
+        <input type="text" name="name" value="{{name}}" required>
         <span>Use keywords that are relevant to your project. Eg: "Flinders Railway Parametric Urban Forest"</span>
 
-        <label for="name">Category</label>
-        <select>
-            <option>Flinders St Station - Ross Anderson</option>
-            <option>Urban Heterodoxy - Michael Zanardo</option>
-            <option>Programmatic Sculpture - François Blanciak</option>
-            <option>Do Not Disturb - Nathan Etherington</option>
+        <label for="category">Category</label>
+        <select name="category">
+            {{#categories}}
+            <option value="{{id}}"{{#is_selected}} selected="selected"{{/is_selected}}>{{name}}</option>
+            {{/categories}}
         </select>
         <span>Select the studio which you are part of.</span>
 
-        <label for="name">Your full name</label>
-        <input type="text">
+        <label for="author">Your full name</label>
+        <input type="text" name="author" value="{{author}}" required>
         <span>Eg: "Johnathan Doe"</span>
 
-        <label for="name">Your website</label>
-        <input type="text">
+        <label for="website">Your website</label>
+        <input type="url" name="website" value="{{website}}">
         <span>Optional. Will be publicly displayed. Eg: "http://www.myportfolio.com/"</span>
 
-        <label for="name">Your email</label>
-        <input type="text">
+        <label for="email">Your email</label>
+        <input type="email" name="email" value="{{email}}">
         <span>Optional. Will be publicly displayed. Do NOT use your university email address. Eg: "starchitect@gmail.com"</span>
 
-        <label for="name">Project summary</label>
-        <textarea></textarea>
+        <label for="summary">Project summary</label>
+        <textarea name="summary" required>{{summary}}</textarea>
         <span>Max 100 words. Use keywords relevant to your project. A double line break indicates a new paragraph.</span>
 
-        <label for="name">Project detail</label>
-        <textarea></textarea>
+        <label for="description">Project detail</label>
+        <textarea name="description" required>{{description}}</textarea>
         <span>Max 250 words. This is supplementary project information. A double line break indicates a new paragraph.</span>
 
-        <label for="name">Main image</label>
-        <input type="file">
+        <label for="file">Main image</label>
+        <input type="file" name="file">
         <span>PNG/JPG only, 4MB max, min 1200px width, use a logical name. eg: "flinders_parametric_urban_forest.png", not "final_render_2.png".</span>
 
-        <label for="name">Extra image 1</label>
-        <input type="file">
+        <label for="supplementary_1">Extra image 1</label>
+        <input type="file" name="supplementary_1">
         <span>Optional. PNG/JPG only, 4MB max, min 600px width, use a logical
             name. eg: "forest_admin_building.png", not "final_render_2.png".</span>
 
-        <label for="name">Extra image 2</label>
-        <input type="file">
+        <label for="supplementary_2">Extra image 2</label>
+        <input type="file" name="supplementary_2">
         <span>Optional. PNG/JPG only, 4MB max, min 600px width, use a logical
             name. eg: "forest_admin_building.png", not "final_render_2.png".</span>
 
-        <label for="name">Extra image 3</label>
-        <input type="file">
+        <label for="supplmentary_3">Extra image 3</label>
+        <input type="file" name="supplementary_3">
         <span>Optional. PNG/JPG only, 4MB max, min 600px width, use a logical
             name. eg: "forest_admin_building.png", not "final_render_2.png".</span>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" name="submit">
     </form>
     <p>
         Note that you will not see your work immediately and all content will be
