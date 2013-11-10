@@ -34,4 +34,10 @@ class Controller_Static extends Controller_Core
             $this->template = $template_path;
         }
     }
+
+    public function action_splash()
+    {
+        $this->view = new View_Layout;
+        $this->template = 'static/splash';
+    }
 }

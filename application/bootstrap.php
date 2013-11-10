@@ -135,7 +135,7 @@ Kohana::modules(array(
 Route::set('homepage', '')
     ->defaults(array(
         'controller' => 'static',
-        'action'     => 'homepage',
+        'action'     => 'splash',
     ));
 
 Route::set('submit project', 'submit')
