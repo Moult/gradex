@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d9bc7c45da0b56fe8f8253ecf1118234",
+    "hash": "df37f9a690dc8e1e1140c9b5e6fa7f1f",
     "packages": [
         {
             "name": "moult/usydarchexhibition-cavis",
@@ -14,7 +14,12 @@
                 "reference": "develop"
             },
             "type": "library",
-            "time": "2013-11-09 14:25:02"
+            "autoload": {
+                "psr-0": {
+                    "Cavis\\Core": "src"
+                }
+            },
+            "time": "2013-11-10 07:08:05"
         },
         {
             "name": "swiftmailer/swiftmailer",
