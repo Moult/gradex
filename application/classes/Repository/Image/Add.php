@@ -8,7 +8,12 @@ class Repository_Image_Add implements Cavis\Core\Usecase\Image\Add\Repository
 {
     public function does_category_exist($id)
     {
-
+        return (bool) DB::select('id')
+            ->from('categories')
+            ->where('id', '=', $id)
+            ->limit(1)
+            ->execute()
+            ->count();
     }
 
     /**
