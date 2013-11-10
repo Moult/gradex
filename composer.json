@@ -2,9 +2,24 @@
     "config": {
         "bin-dir": "bin/"
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "moult/usydarchexhibition-cavis",
+                "version": "dev-develop",
+                "source": {
+                    "url": "https://github.com/Moult/usydarchexhibition-cavis",
+                    "type": "git",
+                    "reference": "develop"
+                }
+            }
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
-        "swiftmailer/swiftmailer": "*"
+        "swiftmailer/swiftmailer": "*",
+        "moult/usydarchexhibition-cavis": "dev-develop"
     },
     "require-dev": {
         "behat/behat": "2.4.*@stable",
@@ -15,6 +30,11 @@
         "behat/mink-sahi-driver": "*",
         "phpspec/phpspec2": "dev-develop"
     },
-    "autoload": {"psr-0": {"": "application/classes"}},
+    "autoload": {
+        "psr-0": {
+            "": "application/classes",
+            "Cavis\\Core": "vendor/moult/usydarchexhibition-cavis/src"
+        }
+    },
     "minimum-stability": "dev"
 }
