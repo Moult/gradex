@@ -73,9 +73,6 @@ class Controller_Project extends Controller_Core
 
     private function extract_posted_file_into_file_data($post_name)
     {
-        if (empty($_FILES[$post_name]['name']))
-            return NULL;
-
         $file = new Cavis\Core\Data\File;
         $file->name = $_FILES[$post_name]['name'];
         $file->tmp_name = $_FILES[$post_name]['tmp_name'];
@@ -90,7 +87,7 @@ class Controller_Project extends Controller_Core
         $files = array();
         foreach ($supplementary_files as $file)
         {
-            if ($file !== NULL)
+            if ( ! empty($file->name))
             {
                 $files[] = $file;
             }
