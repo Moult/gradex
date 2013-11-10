@@ -138,6 +138,12 @@ Route::set('homepage', '')
         'action'     => 'homepage',
     ));
 
+Route::set('submit project', 'submit')
+    ->defaults(array(
+        'controller' => 'project',
+        'action'     => 'submit',
+    ));
+
 /**
  * CMS module routes
  */
