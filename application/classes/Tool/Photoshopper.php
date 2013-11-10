@@ -8,6 +8,6 @@ class Tool_Photoshopper extends Driver_Photoshopper implements Cavis\Core\Tool\P
 {
     public function get_width()
     {
-        return $this->get_dimensions()[1];
+        return $this->get_dimensions()[0];
     }
 }
