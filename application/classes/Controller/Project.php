@@ -51,6 +51,8 @@ class Controller_Project extends Controller_Core
         $supplementary_files[] = $this->extract_posted_file_into_file_data('supplementary_2');
         $supplementary_files[] = $this->extract_posted_file_into_file_data('supplementary_3');
 
+        $this->purge_nonexistent_supplementary_files($supplementary_files);
+
         $image->file = $file;
         $image->supplementary_files = $supplementary_files;
         $image->category = $category;
@@ -71,6 +73,9 @@ class Controller_Project extends Controller_Core
 
     private function extract_posted_file_into_file_data($post_name)
     {
+        if (empty($_FILES[$post_name]['name']))
+            return NULL;
+
         $file = new Cavis\Core\Data\File;
         $file->name = $_FILES[$post_name]['name'];
         $file->tmp_name = $_FILES[$post_name]['tmp_name'];
@@ -78,5 +83,18 @@ class Controller_Project extends Controller_Core
         $file->filesize_in_bytes = $_FILES[$post_name]['size'];
         $file->error_code = $_FILES[$post_name]['error'];
         return $file;
+    }
+
+    private function purge_nonexistent_supplementary_files( & $supplementary_files)
+    {
+        $files = array();
+        foreach ($supplementary_files as $file)
+        {
+            if ($file !== NULL)
+            {
+                $files[] = $file;
+            }
+        }
+        $supplementary_files = $files;
     }
 }
