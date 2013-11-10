@@ -12,6 +12,11 @@
                     "url": "https://github.com/Moult/usydarchexhibition-cavis",
                     "type": "git",
                     "reference": "develop"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Cavis\\Core": "src"
+                    }
                 }
             }
         }
@@ -32,8 +37,7 @@
     },
     "autoload": {
         "psr-0": {
-            "": "application/classes",
-            "Cavis\\Core": "vendor/moult/usydarchexhibition-cavis/src"
+            "": "application/classes"
         }
     },
     "minimum-stability": "dev"
