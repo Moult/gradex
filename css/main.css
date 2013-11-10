@@ -12,7 +12,7 @@ html{height:100%}
 body{height:100%;font-size:13px;background-image:url("../images/noisy_net.png");overflow:auto}
 a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s}
 p.readmore{display:none}
-.error{background:#ffc0c0;color:#900;padding:.5em}
+.error{background:#ffc0c0;color:#900;padding:.5em;margin-bottom:1em}
 header{top:0;z-index:1000;border-top:5px solid #12171b;background-image:url("../images/light_noise_diagonal.png");overflow:visible;-webkit-box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);width:100%;}
 header h2{margin:0;margin-left:15px;padding-right:17px;line-height:35px;background-image:url("../images/divider.png");background-repeat:repeat-y;background-position:top right;display:inline-block;font-weight:900;font-size:.85em;position:relative;}
 header h2 ul{border-left:5px solid #12171b;position:fixed;display:none;z-index:3000;top:35px;background-image:url("../images/light_noise_diagonal.png");padding-left:1em;padding-right:1em;list-style-type:none}
