@@ -24,7 +24,8 @@
     "require": {
         "php": ">=5.3.3",
         "swiftmailer/swiftmailer": "*",
-        "moult/usydarchexhibition-cavis": "dev-develop"
+        "moult/usydarchexhibition-cavis": "dev-develop",
+        "moult/contact": "1.*"
     },
     "require-dev": {
         "behat/behat": "2.4.*@stable",
@@ -33,7 +34,8 @@
         "behat/mink-goutte-driver": "*",
         "behat/mink-selenium2-driver": "*",
         "behat/mink-sahi-driver": "*",
-        "phpspec/phpspec2": "dev-develop"
+        "phpspec/phpspec2": "dev-develop",
+        "phing/phing": "dev-master"
     },
     "autoload": {
         "psr-0": {
