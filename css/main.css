@@ -10,7 +10,7 @@ textarea{resize:vertical}
 .mCSB_container{margin-right:0 !important}
 html{height:100%}
 body{height:100%;font-size:13px;background-image:url("../images/noisy_net.png");overflow:auto}
-a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s}
+a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s;outline:0}
 p.readmore{display:none}
 .error{background:#ffc0c0;color:#900;padding:.5em;margin-bottom:1em}
 header{top:0;z-index:1000;border-top:5px solid #12171b;background-image:url("../images/light_noise_diagonal.png");overflow:visible;-webkit-box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);width:100%;}
@@ -64,10 +64,11 @@ section#submit textarea{width:30em;height:10em}
 section#submit span{line-height:2em;color:#444;font-style:italic;margin-left:3em;float:left}
 section#submit input[type="submit"]{clear:both;background-color:#888;color:#fff}
 section#details{background-image:url("../images/light_noise_diagonal.png");display:none;overflow:hidden;padding-bottom:80px;margin-top:3em;text-align:center;}
-section#details .arrow{position:absolute;margin-top:-28px;margin-left:300px}
+section#details .arrow{position:absolute;margin-top:-28px;margin-left:50%;left:300px}
 section#details article:nth-child(odd){text-align:right;}
-section#details article:nth-child(odd) h3{text-align:right;margin-right:1.013em}
-section#details article:nth-child(odd) ul{margin-right:3.04em}
+section#details article:nth-child(odd) ul{margin-right:3.04em;}
+section#details article:nth-child(odd) ul li{padding-left:0}
+section#details article:nth-child(odd) ul li:nth-child(2){padding-top:10em}
 section#details article{text-align:left;padding-top:3em;color:#333;float:left;width:50%;}
 section#details article a.button{text-decoration:none;font-size:1em;background-color:rgba(0,0,0,0.2);padding:.8em;padding-top:.5em;padding-bottom:.5em;margin:1em;margin-left:0;display:inline-block;-webkit-border-radius:15px;border-radius:15px;color:#333;opacity:.5;transition:opacity .5s ease-in}
 section#details article a.button:hover{color:#111;opacity:1}

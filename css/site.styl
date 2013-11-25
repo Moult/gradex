@@ -19,6 +19,7 @@ a
     -moz-transition 0.5s
     -webkit-transition 0.5s
     transition 0.5s
+    outline 0
 p.readmore
     display none
 .error
@@ -307,14 +308,16 @@ section#details
     .arrow
         position absolute
         margin-top -28px
-        margin-left 300px
+        margin-left 50%
+        left 300px
     article:nth-child(odd)
         text-align right
-        h3
-            text-align right
-            margin-right 1.013em
         ul
             margin-right 3.04em
+            li
+                padding-left 0px
+            li:nth-child(2)
+                padding-top 10em
     article
         text-align left
         padding-top 3em
