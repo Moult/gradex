@@ -20,7 +20,7 @@ a
     -webkit-transition 0.5s
     transition 0.5s
     outline 0
-p.readmore
+div.readmore
     display none
 .error
     background #FFC0C0
@@ -70,7 +70,7 @@ header
             margin-right 0.5em
 section#project
     margin-bottom 50px
-    p:first-of-type
+    p.summary
         padding-bottom 1em
         border-bottom 1px dashed rgba(255, 255, 255, 0.15)
     img:first-of-type
@@ -157,10 +157,9 @@ section#browse
             list-style-type none
             box-shadow 5px
             float left
-            background-image url('http://placehold.it/300x300')
-            background-image url('http://placekitten.com/300/300')
             background-repeat no-repeat
             background-position top center
+            background-size auto 300px
             padding-bottom 20px
             transition opacity 0.2s ease-in, transform 0.15s ease-in
             -webkit-transition opacity 0.2s ease-in, -webkit-transform 0.15s ease-in
@@ -191,7 +190,7 @@ section#brief
         width 10em
         margin-bottom 0em
         color #fff
-    p:first-of-type
+    p.summary
         padding-bottom 1em
         border-bottom 1px dashed rgba(255, 255, 255, 0.15)
     p
@@ -214,9 +213,15 @@ section#brief
         a:hover
             color #fff
             opacity 1
-section#main.flinders-st-project
-    background-image url('../images/flinders-st-station-melbourne.jpg')
+section#main.hero-image
     height 360px
+    background-size cover
+    -webkit-background-size cover
+    -o-background-size cover
+    -moz-background-size cover
+    background-repeat no-repeat
+    background-position center center
+    background-attachment fixed
 section#main
     text-align center
     height 100%

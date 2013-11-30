@@ -35,10 +35,10 @@ $("h2.dropdown").click(function() {
 });
 
 $("a.readmore").click(function() {
-    if ($("p.readmore").hasClass("visible")) {
-        $("p.readmore").removeClass("visible");
+    if ($("div.readmore").hasClass("visible")) {
+        $("div.readmore").removeClass("visible");
     } else {
-        $("p.readmore").slideToggle();
-        $("p.readmore").addClass("visible");
+        $("div.readmore").slideToggle();
+        $("div.readmore").addClass("visible");
     }
 });

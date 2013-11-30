@@ -1,0 +1,33 @@
+<section id="main" class="hero-image" style="background-image: url('{{baseurl}}images/{{picture}}');">
+</section>
+<section id="brief">
+    <h1>
+        {{title}}
+    </h1>
+    {{#has_subtitle}}
+    <h2>
+        {{subtitle}}
+    </h2>
+    {{/has_subtitle}}
+    <p class="summary">
+        {{summary}}
+    </p>
+    <div class="readmore">
+        {{{details}}}
+    </div>
+    <p>
+        <a href="#readmore" class="readmore">Read more</a>
+    </p>
+</section>
+<section id="browse">
+    <ul>
+        {{#projects}}
+        <li style="background-image: url('{{baseurl}}{{thumbnail}}');">
+            <span>
+                <strong>{{name}}</strong><br>
+                {{author}}
+            </span>
+        </li>
+        {{/projects}}
+    </ul>
+</section>

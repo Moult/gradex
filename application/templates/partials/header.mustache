@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{page_title}}</title>
         <meta name="description" content="{{meta_description}}">
-        <meta name="keywords" content="{{meta_keywords}}">
         <meta name="viewport" content="width=device-width">
         <link rel="author" href="{{baseurl}}humans.txt">
         <link rel="shortcut icon" href="{{baseurl}}images/favicon.ico">
@@ -30,19 +29,21 @@
     <div class="container">
         <header>
             {{#navigation}}
-            <h2>
+            <h2{{#has_subitems}} class="dropdown"{{/has_subitems}}>
                 <a href="{{link}}">
-                    <img src="{{baseurl}}images/icons/{{icon}}.png"
-                    width="16" height="16" alt="{{icon}} icon">
-                    University of Sydney Architecture catalogue
+                    <img src="{{baseurl}}images/icons/{{icon}}.png" alt="{{icon}} icon">
+                    {{text}}
+                    {{#has_subitems}}
+                    <img src="{{baseurl}}images/icons/dropdown.png" width="16" height="12" alt="Dropdown arrow">
+                    {{/has_subitems}}
                 </a>
                 {{#has_subitems}}
                 <ul class="dropdown">
                 {{#subitems}}
-                    <li><a href="#">Masters: Beach City</a></li>
+                    <li><a href="{{link}}">{{text}}</a></li>
                 {{/subitems}}
-                {{/has_subitems}}
                 </ul>
+                {{/has_subitems}}
             </h2>
             {{/navigation}}
         </header>

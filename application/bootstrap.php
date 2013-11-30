@@ -144,6 +144,41 @@ Route::set('submit project', 'submit')
         'action'     => 'submit',
     ));
 
+Route::set('view catalogue urban heterodoxy', 'urban-heterodoxy')
+    ->defaults(array(
+        'controller'   => 'catalogue',
+        'action'       => 'view',
+        'catalogue_id' => 2
+    ));
+
+Route::set('view catalogue the intimate metropolis', 'the-intimate-metropolis')
+    ->defaults(array(
+        'controller'   => 'catalogue',
+        'action'       => 'view',
+        'catalogue_id' => 3
+    ));
+
+Route::set('view catalogue national centre for cultural competence', 'national-centre-for-cultural-competence')
+    ->defaults(array(
+        'controller'   => 'catalogue',
+        'action'       => 'view',
+        'catalogue_id' => 4
+    ));
+
+Route::set('view catalogue beach city', 'beach-city')
+    ->defaults(array(
+        'controller'   => 'catalogue',
+        'action'       => 'view',
+        'catalogue_id' => 5
+    ));
+
+Route::set('view catalogue flinders st station', 'flinders-st-station')
+    ->defaults(array(
+        'controller'   => 'catalogue',
+        'action'       => 'view',
+        'catalogue_id' => 6
+    ));
+
 /**
  * CMS module routes
  */
