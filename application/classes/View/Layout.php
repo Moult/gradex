@@ -7,8 +7,7 @@ defined('SYSPATH') OR die('No direct script access.');
 class View_Layout
 {
     public $page_title = 'University of Sydney Architecture Graduation Exhibition';
-    public $meta_description = 'Your default page description';
-    public $meta_keywords = 'seo, keywords, go, here';
+    public $meta_description = 'The University of Sydney Architecture faculty presents the annual online catalogue of its graduating bachelors and masters students.';
 
     /**
      * The base URL of the website.

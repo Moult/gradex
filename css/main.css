@@ -11,7 +11,7 @@ textarea{resize:vertical}
 html{height:100%}
 body{height:100%;font-size:13px;background-image:url("../images/noisy_net.png");overflow:auto}
 a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s;outline:0}
-p.readmore{display:none}
+div.readmore{display:none}
 .error{background:#ffc0c0;color:#900;padding:.5em;margin-bottom:1em}
 header{top:0;z-index:1000;border-top:5px solid #12171b;background-image:url("../images/light_noise_diagonal.png");overflow:visible;-webkit-box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);width:100%;}
 header h2{margin:0;margin-left:15px;padding-right:17px;line-height:35px;background-image:url("../images/divider.png");background-repeat:repeat-y;background-position:top right;display:inline-block;font-weight:900;font-size:.85em;position:relative;}
@@ -20,7 +20,7 @@ header h2 a{color:#595f6a;text-shadow:0 1px 0 rgba(255,255,255,0.5);font-family:
 header h2 a:hover{color:#121212}
 header h2 img{vertical-align:middle;margin-right:.5em}
 section#project{margin-bottom:50px;}
-section#project p:first-of-type{padding-bottom:1em;border-bottom:1px dashed rgba(255,255,255,0.15)}
+section#project p.summary{padding-bottom:1em;border-bottom:1px dashed rgba(255,255,255,0.15)}
 section#project img:first-of-type{max-width:100%;height:auto;max-height:100%;margin:0}
 section#project img.supplementary{display:block;margin-left:3em;margin-bottom:2em;width:40em;height:auto}
 section#project h1{color:#fff;margin-top:.8em;margin-left:1em;font-size:3em;font-family:'Roboto',sans-serif;font-weight:300}
@@ -40,11 +40,11 @@ section#browse ul li:hover{transform:scale(.95,.95);-webkit-transform:scale(.95,
 section#brief{color:#8891a2;color:#a7b2c7;margin-left:3em;}
 section#brief h1{display:block;width:10em;margin-bottom:0;color:#fff;font-size:3em;font-family:'Roboto',sans-serif;font-weight:300}
 section#brief h2{font-family:'Roboto',sans-serif;font-weight:300;display:inline-block;width:10em;margin-bottom:0;color:#fff}
-section#brief p:first-of-type{padding-bottom:1em;border-bottom:1px dashed rgba(255,255,255,0.15)}
+section#brief p.summary{padding-bottom:1em;border-bottom:1px dashed rgba(255,255,255,0.15)}
 section#brief p{width:40em;}
 section#brief p a{text-decoration:none;font-size:1em;background-color:rgba(255,255,255,0.1);padding:.8em;padding-top:.5em;padding-bottom:.5em;margin:1em;margin-left:0;display:inline-block;-webkit-border-radius:15px;border-radius:15px;color:#eee;opacity:.5;transition:opacity .5s ease-in}
 section#brief p a:hover{color:#fff;opacity:1}
-section#main.flinders-st-project{background-image:url("../images/flinders-st-station-melbourne.jpg");height:360px}
+section#main.hero-image{height:360px;background-size:cover;-webkit-background-size:cover;-o-background-size:cover;-moz-background-size:cover;background-repeat:no-repeat;background-position:center center;background-attachment:fixed}
 section#main{text-align:center;height:100%;min-height:100%;margin:0;overflow:hidden;padding-top:40px;z-index:100;}
 section#main h1,section#main h2{color:#fff;font-family:'Roboto',sans-serif;font-weight:900;font-weight:300;font-size:3.8em;margin-top:.8em;margin-bottom:1.4em;margin-left:.8em}
 section#main h2{font-size:3em;margin-bottom:0}
