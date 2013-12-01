@@ -6,6 +6,12 @@
 
 class Controller_Project extends Controller_Core
 {
+    public function action_view()
+    {
+        $repository = new Repository_Project;
+        $this->view->project_data = $repository->get_data_from_project_slug($this->request->param('project_slug'));
+    }
+
     public function action_submit()
     {
         if ($this->has_pressed_the_submit_button())

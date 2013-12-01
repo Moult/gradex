@@ -12,9 +12,7 @@
     <p class="summary">
         {{summary}}
     </p>
-    <div class="readmore">
-        {{{details}}}
-    </div>
+    {{{details}}}
     <p>
         <a href="#readmore" class="readmore">Read more</a>
     </p>
@@ -22,11 +20,12 @@
 <section id="browse">
     <ul>
         {{#projects}}
-        <li style="background-image: url('{{baseurl}}{{thumbnail}}');">
+        <li style="background-image: url('{{baseurl}}{{thumbnail}}');" data-url="{{baseurl}}{{slug}}">
             <span>
                 <strong>{{name}}</strong><br>
                 {{author}}
             </span>
+            </a>
         </li>
         {{/projects}}
     </ul>

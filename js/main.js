@@ -1,12 +1,3 @@
-$("section#showcase img").hide();
-function switchShowcase() {
-    $("section#showcase img").first().appendTo("section#showcase").fadeOut(3000);
-    $("section#showcase img").first().fadeIn(3000);
-    setTimeout(switchShowcase, 10000);
-}
-switchShowcase();
-
-
 $("#viewDetails").click(function() {
     if ($("#viewDetails").hasClass("visible")) {
         $("#viewDetails").removeClass("visible");
@@ -35,10 +26,23 @@ $("h2.dropdown").click(function() {
 });
 
 $("a.readmore").click(function() {
-    if ($("div.readmore").hasClass("visible")) {
-        $("div.readmore").removeClass("visible");
+    if ($("p.readmore").hasClass("visible")) {
+        $("p.readmore").removeClass("visible");
     } else {
-        $("div.readmore").slideToggle();
-        $("div.readmore").addClass("visible");
+        $("p.readmore").slideToggle();
+        $("p.readmore").addClass("visible");
+    }
+});
+
+$("section#browse ul li").click(function() {
+    window.location = $(this).data('url');
+})
+
+$('*[data-resize="true"]').each(function() {
+    var ratio = $(window).width() / $(this).data('width');
+    var height = $(this).data('height') * ratio;
+    $(this).css('height', height);
+    if (height / $(window).height() > 0.8) {
+        $(this).css('background-attachment', 'scroll');
     }
 });

@@ -1,0 +1,32 @@
+<section id="main" class="hero-image" style="background-image: url('{{baseurl}}{{hero_image}}');" data-resize="true" data-width="{{hero_image_width}}" data-height="{{hero_image_height}}">
+</section>
+<section id="project" class="hero-image">
+    <h1>
+        {{name}}
+    </h1>
+    <h2>
+        By {{author}}
+        {{#has_website_or_email}}
+        <span>
+            {{#has_website}}
+            <a href="{{website}}"><img src="{{baseurl}}images/icons/website.png" alt="Website link icon"></a>
+            {{/has_website}}
+            {{#has_email}}
+            <a href="mailto:{{email}}"><img src="{{baseurl}}images/icons/email.png" alt="Email icon"></a>
+            {{/has_email}}
+        </span>
+        {{/has_website_or_email}}
+    </h2>
+
+    {{{summary}}}
+
+    {{{description}}}
+
+    <p>
+        <a href="#" class="readmore">Read more</a>
+    </p>
+
+    {{#supplementary_images}}
+    <img src="{{baseurl}}{{image}}" class="supplementary" alt="Supplementary image {{number}}">
+    {{/supplementary_images}}
+</section>

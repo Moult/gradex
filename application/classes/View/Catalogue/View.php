@@ -89,7 +89,7 @@ class View_Catalogue_View extends View_Layout
 
     public function details()
     {
-        return Text::auto_p($this->details);
+        return str_replace('<p>', '<p class="readmore">', Text::auto_p($this->details));
     }
 
     public function picture()
@@ -116,7 +116,8 @@ class View_Catalogue_View extends View_Layout
             $projects[] = array(
                 'name' => $project->name,
                 'author' => $project->author,
-                'thumbnail' => str_replace(DOCROOT, '', $project->thumbnail)
+                'thumbnail' => str_replace(DOCROOT, '', $project->thumbnail),
+                'slug' => $project->slug
             );
         }
         return $projects;

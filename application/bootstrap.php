@@ -179,6 +179,13 @@ Route::set('view catalogue flinders st station', 'flinders-st-station')
         'catalogue_id' => 6
     ));
 
+Route::set('view project', '<project_slug>', array('project_slug' => '.*'))
+    ->defaults(array(
+        'controller'   => 'project',
+        'action'       => 'view',
+        'project_slug' => NULL
+    ));
+
 /**
  * CMS module routes
  */
@@ -199,11 +206,11 @@ Route::set('cms editor', 'cms/edit(/<template_path>)', array('template_path' => 
 /**
  * Catchall route
  */
-Route::set('default', '(<template_path>)', array('template_path' => '.*'))
-    ->defaults(array(
-        'controller' => 'static',
-        'action'     => 'loader',
-    ));
+//Route::set('default', '(<template_path>)', array('template_path' => '.*'))
+    //->defaults(array(
+        //'controller' => 'static',
+        //'action'     => 'loader',
+    //));
 
 /**
  * Salt used for storing cookies for sessions
