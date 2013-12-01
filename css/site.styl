@@ -37,7 +37,7 @@ a
     -moz-transition 0.5s
     -webkit-transition 0.5s
     transition 0.5s
-    outline 0
+    outline none
 p.readmore
     display none
 .error
@@ -283,12 +283,15 @@ section#main
                 color #bbb
                 font-size 1em
                 font-family 'Roboto', sans-serif
+                outline none
                 span
                     display block
                 span:first-child
                     font-weight bold
             a:hover
                 color #fff
+        li:nth-child(1), li:nth-child(2)
+            opacity 0.3
 section#submit
     background-image url('../images/light_noise_diagonal.png')
     padding 2em

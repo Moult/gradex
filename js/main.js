@@ -36,4 +36,8 @@ $('*[data-resize="true"]').each(function() {
     $(".container").customScrollbar("resize", true);
 });
 
+$(".comingsoon").click(function() {
+    alert('Archive coming soon.');
+})
+
 $(".container").customScrollbar("resize", true);

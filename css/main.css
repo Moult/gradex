@@ -13,7 +13,7 @@ textarea{resize:vertical}
 .scrollable.default-skin{padding:0 !important}
 html{margin:0;padding:0}
 body{font-size:13px;background-image:url("../images/noisy_net.png");margin:0;padding:0}
-a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s;outline:0}
+a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s;outline:none}
 p.readmore{display:none}
 .error{background:#ffc0c0;color:#900;padding:.5em;margin-bottom:1em}
 header{top:0;z-index:1000;border-top:5px solid #12171b;background-image:url("../images/light_noise_diagonal.png");overflow:visible;-webkit-box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);box-shadow:0 15px 30px 0 rgba(0,0,0,0.5);width:100%;}
@@ -55,10 +55,11 @@ section#main h1{margin-top:0}
 section#main p{font-family:'Roboto',sans-serif;font-weight:700;font-size:1.52em;color:#121212;text-shadow:0 1px 0 rgba(255,255,255,0.2);margin-left:2em;text-transform:lowercase}
 section#main ol{list-style-type:none;}
 section#main ol li{vertical-align:top;width:300px;display:inline-block;}
-section#main ol li a{text-shadow:0 1px 0 rgba(255,255,255,0.2);text-decoration:none;color:#bbb;font-size:1em;font-family:'Roboto',sans-serif;}
+section#main ol li a{text-shadow:0 1px 0 rgba(255,255,255,0.2);text-decoration:none;color:#bbb;font-size:1em;font-family:'Roboto',sans-serif;outline:none;}
 section#main ol li a span{display:block}
 section#main ol li a span:first-child{font-weight:bold}
 section#main ol li a:hover{color:#fff}
+section#main ol li:nth-child(1),section#main ol li:nth-child(2){opacity:.3}
 section#submit{background-image:url("../images/light_noise_diagonal.png");padding:2em;overflow:hidden;}
 section#submit p{clear:both}
 section#submit label{width:9em;display:inline-block;float:left;clear:left;line-height:2em}
