@@ -6,7 +6,8 @@ $("#viewDetails").click(function() {
 
 $(".container").customScrollbar({
     updateOnWindowResize:true,
-    swipeSpeed: 2
+    swipeSpeed: 2,
+    wheelSpeed: 60
 });
 
 $("h2.dropdown").click(function() {
@@ -34,3 +35,5 @@ $('*[data-resize="true"]').each(function() {
     }
     $(".container").customScrollbar("resize", true);
 });
+
+$(".container").customScrollbar("resize", true);

@@ -82,9 +82,12 @@ class View_Project_View extends View_Layout
         {
             if ( ! empty($this->project_data->{'supplementary_file_'.$i}))
             {
+                list($width, $height) = getimagesize($this->project_data->{'supplementary_file_'.$i});
                 $supplementary_images[] = array(
                     'number' => $i,
-                    'image' => str_replace(DOCROOT, '', $this->project_data->{'supplementary_file_'.$i})
+                    'image' => str_replace(DOCROOT, '', $this->project_data->{'supplementary_file_'.$i}),
+                    'width' => $width,
+                    'height' => $height
                 );
             }
         }

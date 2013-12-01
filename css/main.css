@@ -146,6 +146,7 @@ footer ul{padding:0}
 section#brief{margin:0}
 section#brief h1,section#brief h2,section#brief p,section#project h1,section#project h2,section#project p{margin:0;padding:15px;width:auto}
 section#main.hero-image{height:100px}
+section#project img.supplementary{margin:15px;width:250px;height:auto}
 }@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min-resolution: 144dpi){}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}
 a,a:visited{text-decoration:underline}
 a[href]:after{content:" (" attr(href) ")"}
