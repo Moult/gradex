@@ -17,8 +17,8 @@
         <link rel="apple-touch-icon" sizes="114x114" href="{{baseurl}}images/apple-touch-icon-114x114.png">
         <link rel="apple-touch-icon" sizes="144x144" href="{{baseurl}}images/apple-touch-icon-144x144.png">
         <link rel="stylesheet" href="{{baseurl}}css/normalize.css">
+        <link href="{{baseurl}}css/jquery.custom-scrollbar.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="{{baseurl}}css/main.css">
-        <link href="{{baseurl}}css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
         <script src="{{baseurl}}js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -26,24 +26,24 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-    <div class="container">
-        <header>
-            {{#navigation}}
-            <h2{{#has_subitems}} class="dropdown"{{/has_subitems}}>
-                <a href="{{link}}">
-                    <img src="{{baseurl}}images/icons/{{icon}}.png" alt="{{icon}} icon">
-                    {{text}}
+        <div class="container default-skin">
+            <header>
+                {{#navigation}}
+                <h2{{#has_subitems}} class="dropdown"{{/has_subitems}}>
+                    <a href="{{link}}">
+                        <img src="{{baseurl}}images/icons/{{icon}}.png" alt="{{icon}} icon">
+                        {{text}}
+                        {{#has_subitems}}
+                        <img src="{{baseurl}}images/icons/dropdown.png" width="16" height="12" alt="Dropdown arrow">
+                        {{/has_subitems}}
+                    </a>
                     {{#has_subitems}}
-                    <img src="{{baseurl}}images/icons/dropdown.png" width="16" height="12" alt="Dropdown arrow">
+                    <ul class="dropdown">
+                    {{#subitems}}
+                        <li><a href="{{link}}">{{text}}</a></li>
+                    {{/subitems}}
+                    </ul>
                     {{/has_subitems}}
-                </a>
-                {{#has_subitems}}
-                <ul class="dropdown">
-                {{#subitems}}
-                    <li><a href="{{link}}">{{text}}</a></li>
-                {{/subitems}}
-                </ul>
-                {{/has_subitems}}
-            </h2>
-            {{/navigation}}
-        </header>
+                </h2>
+                {{/navigation}}
+            </header>

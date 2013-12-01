@@ -7,9 +7,12 @@ img{vertical-align:middle}
 fieldset{border:0;margin:0;padding:0}
 textarea{resize:vertical}
 .chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
-.mCSB_container{margin-right:0 !important}
-html{height:100%}
-body{height:100%;font-size:13px;background-image:url("../images/noisy_net.png");overflow:auto}
+.container{position:absolute;width:100%;height:100%;top:0;box-sizing:border-box;padding:0;overflow:hidden}
+.overview{height:auto;width:100%}
+.scrollable.default-skin .scroll-bar .thumb{max-width:4px !important;z-index:1000 !important;background-color:#eee !important;opacity:.8 !important}
+.scrollable.default-skin{padding:0 !important}
+html{margin:0;padding:0}
+body{font-size:13px;background-image:url("../images/noisy_net.png");margin:0;padding:0}
 a{-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;transition:.5s;outline:0}
 p.readmore{display:none}
 .error{background:#ffc0c0;color:#900;padding:.5em;margin-bottom:1em}

@@ -2,17 +2,35 @@
  * Site specific CSS
  */
 
-.mCSB_container
-    margin-right 0px !important
-
+.container
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    box-sizing border-box
+    padding 0px
+    overflow hidden
+.overview
+    height auto
+    width 100%
+.scrollable.default-skin .scroll-bar .thumb
+    max-width 4px !important
+    z-index 1000 !important
+    background-color #eee !important
+    opacity 0.8 !important
+.scrollable.default-skin
+    padding 0px !important
 html
-    height 100%
-
+    /*height 100%*/
+    margin 0
+    padding 0
 body
-    height 100%
+    /*height 100%*/
     font-size 13px
     background-image url('../images/noisy_net.png')
-    overflow auto
+    /*overflow auto*/
+    margin 0
+    padding 0
 a
     -o-transition 0.5s
     -ms-transition 0.5s

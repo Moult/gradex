@@ -1,37 +1,23 @@
 $("#viewDetails").click(function() {
-    if ($("#viewDetails").hasClass("visible")) {
-        $("#viewDetails").removeClass("visible");
-    } else {
-        $("#details").slideToggle('slow');
-        $("#viewDetails").addClass("visible");
-    }
+    $("#details").slideToggle('slow', function() {
+        $(".container").customScrollbar("resize", true);
+    });
 });
 
-
-$("body").mCustomScrollbar({
-    theme: "light",
-    scrollInertia: 100,
-    advanced:{
-        updateOnContentResize: true
-    }
+$(".container").customScrollbar({
+    updateOnWindowResize:true
 });
 
 $("h2.dropdown").click(function() {
-    if ($("ul.dropdown").hasClass("visible")) {
-        $("ul.dropdown").removeClass("visible");
-    } else {
-        $("ul.dropdown").slideToggle();
-        $("ul.dropdown").addClass("visible");
-    }
+    $("ul.dropdown").slideToggle('slow', function() {
+        $(".container").customScrollbar("resize", true);
+    });
 });
 
 $("a.readmore").click(function() {
-    if ($("p.readmore").hasClass("visible")) {
-        $("p.readmore").removeClass("visible");
-    } else {
-        $("p.readmore").slideToggle();
-        $("p.readmore").addClass("visible");
-    }
+    $("p.readmore").slideToggle('slow', function() {
+        $(".container").customScrollbar("resize", true);
+    });
 });
 
 $("section#browse ul li").click(function() {
@@ -45,4 +31,5 @@ $('*[data-resize="true"]').each(function() {
     if (height / $(window).height() > 0.8) {
         $(this).css('background-attachment', 'scroll');
     }
+    $(".container").customScrollbar("resize", true);
 });
