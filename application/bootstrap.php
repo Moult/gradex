@@ -138,6 +138,12 @@ Route::set('homepage', '')
         'action'     => 'homepage',
     ));
 
+Route::set('about', 'about')
+    ->defaults(array(
+        'controller' => 'static',
+        'action'     => 'about',
+    ));
+
 Route::set('submit project', 'submit')
     ->defaults(array(
         'controller' => 'project',
