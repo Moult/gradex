@@ -100,7 +100,8 @@ footer ul li a:hover{color:#aaa}
 .clearfix:before,.clearfix:after{content:" ";display:table;}
 .clearfix:after{clear:both}
 .clearfix{*zoom:1}
-@media only screen and (min-width: 35em){}@media only screen and (max-width: 1000px){section#main h2{font-size:2em}
+@media only screen and (min-width: 35em){}@media only screen and (max-width: 1000px){body{font-size:12px}
+section#main h2{font-size:2em}
 section#main h1{font-size:3em}
 section#main img{height:130px}
 section#main ol li{width:150px}
@@ -113,7 +114,8 @@ section#details article ul li span.when{display:none}
 section#details article ul li span.why{display:none}
 section#details article ul li span.catalogue{display:none}
 section#details article:nth-child(2n+1){text-align:center;padding-top:0}
-section#details article:nth-child(2n+1) ul li:nth-child(2){padding-top:0}
+section#details article:nth-child(2n+1) ul li:nth-child(2){padding-top:0;}
+section#details article:nth-child(2n+1) ul li:nth-child(2) img{width:75%;height:auto}
 section#browse ul li{height:280px;background-size:auto 200px;}
 section#browse ul li span{margin-top:220px;margin-left:10px}
 }@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min-resolution: 144dpi){}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}
