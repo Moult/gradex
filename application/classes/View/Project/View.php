@@ -115,7 +115,13 @@ class View_Project_View extends View_Layout
 
     public function summary()
     {
-        return Text::auto_p($this->project_data->summary);
+        $summary_markup = Text::auto_p($this->project_data->summary);
+        $pos = strrpos($summary_markup, '<p>');
+        if ($pos !== FALSE)
+        {
+            $summary_markup = substr_replace($summary_markup, '<p class="summary">', $pos, strlen('<p>'));
+        }
+        return $summary_markup;
     }
 
     public function description()
