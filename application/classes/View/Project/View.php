@@ -2,6 +2,71 @@
 
 class View_Project_View extends View_Layout
 {
+    public function navigation()
+    {
+        if ( (int) $this->project_data->category === 2)
+        {
+            $current_page_text = 'Masters: Urban Heterodoxy';
+        }
+        elseif ( (int) $this->project_data->category === 3)
+        {
+            $current_page_text = 'Masters: The Intimate Metropolis';
+        }
+        elseif ( (int) $this->project_data->category === 4)
+        {
+            $current_page_text = 'Masters: National Centre for Cultural Competence';
+        }
+        elseif ( (int) $this->project_data->category === 5)
+        {
+            $current_page_text = 'Masters: Beach City';
+        }
+        elseif ( (int) $this->project_data->category === 6)
+        {
+            $current_page_text = 'Bachelors: Flinders St Station';
+        }
+
+        return array(
+            array(
+                'link' => $this->baseurl().'',
+                'icon' => 'catalogue',
+                'text' => 'University of Sydney Architecture Catalogue',
+            ),
+            array(
+                'link' => $this->baseurl().'',
+                'icon' => 'analogue',
+                'text' => 'Analogue 2013',
+            ),
+            array(
+                'link' => '#catalogues',
+                'icon' => 'student',
+                'text' => $current_page_text,
+                'has_subitems' => TRUE,
+                'subitems' => array(
+                    array(
+                        'link' => $this->baseurl().'flinders-st-station/',
+                        'text' => 'Bachelors: Flinders St Station'
+                    ),
+                    array(
+                        'link' => $this->baseurl().'beach-city/',
+                        'text' => 'Masters: Beach City'
+                    ),
+                    array(
+                        'link' => $this->baseurl().'urban-heterodoxy/',
+                        'text' => 'Masters: Urban Heterodoxy'
+                    ),
+                    array(
+                        'link' => $this->baseurl().'the-intimate-metropolis/',
+                        'text' => 'Masters: The Intimate Metropolis'
+                    ),
+                    array(
+                        'link' => $this->baseurl().'national-centre-for-cultural-competence/',
+                        'text' => 'Masters: National Centre for Cultural Competence'
+                    ),
+                )
+            )
+        );
+    }
+
     public function page_title()
     {
         return $this->project_data->name.' - USYD Arch. Exhibition';
