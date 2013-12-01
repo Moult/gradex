@@ -34,7 +34,7 @@ section#project p a:hover{color:#fff;opacity:1}
 section#blurb{background-image:url("../images/light_noise_diagonal.png");z-index:100;min-height:5px;top:40px;width:100%;position:fixed}
 section#browse{margin-bottom:30px;overflow:hidden;}
 section#browse ul{width:100%;padding:0;margin:0;}
-section#browse ul li{cursor:pointer;color:#8891a2;position:relative;width:20%;min-height:400px;list-style-type:none;box-shadow:5px;float:left;background-repeat:no-repeat;background-position:top center;background-size:auto 300px;padding-bottom:20px;transition:opacity .2s ease-in,transform .15s ease-in;-webkit-transition:opacity .2s ease-in,-webkit-transform .15s ease-in;}
+section#browse ul li{cursor:pointer;color:#8891a2;position:relative;width:20%;height:380px;overflow:hidden;list-style-type:none;box-shadow:5px;float:left;background-repeat:no-repeat;background-position:top center;background-size:auto 300px;padding-bottom:20px;transition:opacity .2s ease-in,transform .15s ease-in;-webkit-transition:opacity .2s ease-in,-webkit-transform .15s ease-in;}
 section#browse ul li span{display:inline-block;margin-top:320px;margin-left:20px}
 section#browse ul li:hover{transform:scale(.95,.95);-webkit-transform:scale(.95,.95);opacity:1}
 section#brief{color:#8891a2;color:#a7b2c7;margin-left:3em;}
