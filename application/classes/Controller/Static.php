@@ -18,7 +18,12 @@ class Controller_Static extends Controller_Core
      * @return void
      */
     public function action_homepage()
-    {}
+    {
+        if ( ! isset($_GET['x']))
+        {
+            die('Launching soon');
+        }
+    }
 
     /**
      * Autoloads view templates which don't have a specific route setup
