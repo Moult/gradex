@@ -25,6 +25,10 @@ class Controller_Static extends Controller_Core
         }
     }
 
+    public function action_about()
+    {
+    }
+
     /**
      * Autoloads view templates which don't have a specific route setup
      *
