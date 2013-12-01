@@ -6,7 +6,7 @@ $("#viewDetails").click(function() {
 
 $(".container").customScrollbar({
     updateOnWindowResize:true,
-    swipeSpeed: 2,
+    swipeSpeed: 3,
     wheelSpeed: 60
 });
 
