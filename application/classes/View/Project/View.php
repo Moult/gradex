@@ -2,6 +2,20 @@
 
 class View_Project_View extends View_Layout
 {
+    public function current_category_link()
+    {
+        if ( (int) $this->project_data->category === 2)
+            return $this->baseurl().'urban-heterodoxy/';
+        elseif ( (int) $this->project_data->category === 3)
+            return $this->baseurl().'the-intimate-metropolis/';
+        elseif ( (int) $this->project_data->category === 4)
+            return $this->baseurl().'national-centre-for-cultural-competence/';
+        elseif ( (int) $this->project_data->category === 5)
+            return $this->baseurl().'beach-city/';
+        elseif ( (int) $this->project_data->category === 6)
+            return $this->baseurl().'flinders-st-station/';
+    }
+
     public function navigation()
     {
         if ( (int) $this->project_data->category === 2)
@@ -149,7 +163,7 @@ class View_Project_View extends View_Layout
     public function supplementary_images()
     {
         $supplementary_images = array();
-        for ($i = 0; $i < 3; $i++)
+        for ($i = 1; $i < 4; $i++)
         {
             if ( ! empty($this->project_data->{'supplementary_file_'.$i}))
             {

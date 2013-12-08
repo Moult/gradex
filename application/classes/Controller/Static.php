@@ -12,22 +12,11 @@ defined('SYSPATH') OR die('No direct script access.');
  */
 class Controller_Static extends Controller_Core
 {
-    /**
-     * Homepage of website.
-     *
-     * @return void
-     */
     public function action_homepage()
-    {
-        if ( ! isset($_GET['x']))
-        {
-            die('Launching soon');
-        }
-    }
+    {}
 
     public function action_about()
-    {
-    }
+    {}
 
     /**
      * Autoloads view templates which don't have a specific route setup

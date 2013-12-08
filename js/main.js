@@ -40,4 +40,6 @@ $(".comingsoon").click(function() {
     alert('Archive coming soon.');
 })
 
-$(".container").customScrollbar("resize", true);
+window.onload = function() {
+    $(".container").customScrollbar("resize", true);
+}
