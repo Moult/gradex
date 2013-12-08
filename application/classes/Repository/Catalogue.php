@@ -26,6 +26,7 @@ class Repository_Catalogue
         return DB::select('*')
             ->from('projects')
             ->where('category', '=', $catalogue_id)
+            ->order_by('author', 'ASC')
             ->as_object()
             ->execute();
     }
